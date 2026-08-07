@@ -98,9 +98,9 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b3bb40a8176a7974df64f59f1193bb6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b3bb40a8176a7974df64f59f1193bb6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-b3bb40a8176a7974df64f59f1193bb6c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ce706aef3f93b6d158b493c7f42ffbbf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ce706aef3f93b6d158b493c7f42ffbbf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ce706aef3f93b6d158b493c7f42ffbbf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/glossary/glossary.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -303,7 +303,10 @@ window.Quarto = {
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><strong>Summary</strong></a>
   <ul class="collapse">
   <li><a href="#synopsis" id="toc-synopsis" class="nav-link" data-scroll-target="#synopsis"><strong>Synopsis</strong></a></li>
-  <li><a href="#summary-plot" id="toc-summary-plot" class="nav-link" data-scroll-target="#summary-plot"><strong>Summary Plot</strong></a></li>
+  <li><a href="#summary-plot" id="toc-summary-plot" class="nav-link" data-scroll-target="#summary-plot"><strong>Summary Plot</strong></a>
+  <ul class="collapse">
+  <li><a href="#reconstruct-the-workflow" id="toc-reconstruct-the-workflow" class="nav-link" data-scroll-target="#reconstruct-the-workflow">Reconstruct the workflow</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#troubleshooting-git-and-github" id="toc-troubleshooting-git-and-github" class="nav-link" data-scroll-target="#troubleshooting-git-and-github"><strong>Troubleshooting Git and GitHub</strong></a></li>
   <li><a href="#continued-learning" id="toc-continued-learning" class="nav-link" data-scroll-target="#continued-learning"><strong>Continued Learning</strong></a>
@@ -2313,7 +2316,7 @@ Example pull request for this analysis
 <hr>
 </section>
 </section>
-<section id="summary" class="level1 page-columns page-full">
+<section id="summary" class="level1">
 <h1><strong>Summary</strong></h1>
 <hr>
 <section id="synopsis" class="level2">
@@ -2322,27 +2325,438 @@ Example pull request for this analysis
 <p>Along the way, you’ve also learned about the advantages and challenges of <button class="glossary"><span class="def">Analyses of data from a collection of studies targeting a common research question</span>meta-analyses</button> and best practices for scientific project organization.</p>
 <hr>
 </section>
-<section id="summary-plot" class="level2 page-columns page-full">
+<section id="summary-plot" class="level2">
 <h2 class="anchored" data-anchor-id="summary-plot"><strong>Summary Plot</strong></h2>
 <p>In order to create the final summary plot, please drag and drop the steps that you’ve followed in this case study into the correct order.</p>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<p>to-do: figure out how to make this into a drag and drop activity for the learner (see <a href="https://lumi.education/en/">this platform</a>))</p>
-<p>Note: this is a mock-up of what the figure may look like, but a final version will be a little more detailed and include color and more collaborative elements of the process!</p>
-</div></div><div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html//1TEi1D35oiiC21mYR0cKjWuOOpuxm3fTGyCXSqFmjL3I_g3f2d5a3e170_0_38.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Workflow of this project using Git and GitHub" width="1250"></p>
-</figure>
-</div>
-</div>
-</div>
 <!--
 construct a plot here that summarizes the conclusions found in the data, if applicable
 (connecting to a main question if possible)
 -->
+<section id="reconstruct-the-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="reconstruct-the-workflow">Reconstruct the workflow</h3>
+<p>Drag each workflow block into the correct position and click <strong>Check Answer</strong> or <strong>Reset</strong> to start over.</p>
+<!-- html part of code, creates structure of activity -->
+<!-- creates board with dropzones, arrows, and empty placeholder divs -->
+<div class="workflow-grid">
+
+  <!-- Row 1 -->
+  <div class="dropzone" data-correct="receive-files"></div>
+
+  <div class="arrow">
+    <svg viewbox="0 0 100 40" width="60" height="24">
+      <line x1="5" y1="20" x2="80" y2="20" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="80,5 98,20 80,35" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div class="dropzone" data-correct="local-git"></div>
+
+  <div class="arrow">
+    <svg viewbox="0 0 100 40" width="60" height="24">
+      <line x1="5" y1="20" x2="80" y2="20" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="80,5 98,20 80,35" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div class="dropzone" data-correct="remote-github"></div>
+
+  <!-- Row 2 -->
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div class="arrow top-down-arrow">
+    <svg viewbox="0 0 40 100" width="20" height="50">
+      <line x1="20" y1="5" x2="20" y2="80" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="5,80 20,98 35,80" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div></div>
+
+  <!-- Row 3 -->
+  <div class="dropzone" data-correct="readme"></div>
+
+  <div class="arrow">
+    <svg viewbox="0 0 100 40" width="60" height="24">
+      <line x1="95" y1="20" x2="20" y2="20" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="20,5 2,20 20,35" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div class="dropzone" data-correct="perform-analysis"></div>
+
+  <div class="arrow">
+    <svg viewbox="0 0 100 40" width="60" height="24">
+      <line x1="95" y1="20" x2="20" y2="20" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="20,5 2,20 20,35" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div class="dropzone" data-correct="make-branch"></div>
+
+  <!-- Row 4 -->
+  <div class="arrow">
+    <svg viewbox="0 0 40 100" width="20" height="50">
+      <line x1="20" y1="5" x2="20" y2="80" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="5,80 20,98 35,80" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <!-- Row 5 -->
+  <div class="dropzone" data-correct="push-remote"></div>
+
+  <div class="arrow">
+    <svg viewbox="0 0 100 40" width="60" height="24">
+      <line x1="5" y1="20" x2="80" y2="20" stroke="black" stroke-width="6" stroke-linecap="round"></line>
+      <polygon points="80,5 98,20 80,35" fill="black"></polygon>
+    </svg>
+  </div>
+
+  <div class="dropzone" data-correct="pull-request"></div>
+
+</div>
+
+<!-- creates empty card bank, to be filled with shuffled cards -->
+<div id="bank" class="bank"></div>
+
+<br>
+
+<!-- creates buttons to check answer and reset board -->
+<button id="check-btn">Check Answer</button>
+<button id="reset-btn">Reset</button>
+
+<div id="feedback"></div>
+
+<!-- JavaScript part of code, creates interactive features -->
+<!-- calls external library SortableJS to do drag-and-drop interaction -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+<script>
+
+// create cards, each with an id and a relative path to an image
+const cards = [
+  { id: "receive-files", img: "img/receive-files.png" },
+  { id: "local-git", img: "img/local-git.png" },
+  { id: "remote-github", img: "img/remote-github.png" },
+  { id: "make-branch", img: "img/make-branch.png" },
+  { id: "perform-analysis", img: "img/perform-analysis.png" },
+  { id: "readme", img: "img/readme.png" },
+  { id: "push-remote", img: "img/push-remote.png" },
+  { id: "pull-request", img: "img/pull-request.png" }
+];
+
+// function to shuffle the cards when they are put into the card bank 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// function to create card 
+function createCard(card) {
+
+  const div = document.createElement("div");
+
+  div.className = "card";
+  div.dataset.id = card.id;
+
+  const img = document.createElement("img");
+
+  img.src = card.img;
+  img.alt = card.id;
+  
+  div.appendChild(img);
+
+  return div;
+}
+
+// function to reset all elements, shuffle cards in bank and clear dropzones 
+function setupBoard() {
+
+  const bank = document.getElementById("bank");
+
+  bank.innerHTML = "";
+
+  document
+    .querySelectorAll(".dropzone")
+    .forEach(z => {
+      z.innerHTML = "";
+      z.classList.remove(
+        "correct",
+        "incorrect"
+      );
+    });
+
+  const shuffled = [...cards];
+
+  shuffle(shuffled);
+
+  shuffled.forEach(card => {
+    bank.appendChild(createCard(card));
+  });
+
+}
+
+// initialize drag-and-drop 
+window.addEventListener("load", function() {
+
+  setupBoard();
+
+  Sortable.create(
+    document.getElementById("bank"),
+    {
+      group: "workflow",
+      animation: 150
+    }
+  );
+
+  document
+    .querySelectorAll(".dropzone")
+    .forEach(zone => {
+
+      Sortable.create(zone, {
+        group: "workflow",
+        animation: 150,
+        
+        onAdd(event) {
+
+          const zone = event.to;
+      
+          if (zone.children.length > 1) {
+      
+            document
+              .getElementById("bank")
+              .appendChild(zone.firstElementChild);
+      
+          }
+        }
+      });
+    });
+});
+
+// event handler, to check all dropzones to see if correct or incorrect 
+document
+.getElementById("check-btn")
+.addEventListener("click", () => {
+
+  let correct = 0;
+
+  const zones =
+    document.querySelectorAll(".dropzone");
+
+  zones.forEach(zone => {
+
+    zone.classList.remove(
+      "correct",
+      "incorrect"
+    );
+
+    const card =
+      zone.querySelector(".card");
+
+    if(!card) {
+
+      zone.classList.add("incorrect");
+      return;
+
+    }
+
+    if(
+      card.dataset.id ===
+      zone.dataset.correct
+    ) {
+
+      correct++;
+      zone.classList.add("correct");
+
+    } else {
+
+      zone.classList.add("incorrect");
+
+    }
+
+  });
+
+  const feedback =
+    document.getElementById("feedback");
+
+  const total = cards.length;
+  
+  if (correct === total) {
+    feedback.innerHTML = "<p class='pass'>Perfect! All " + total +
+      " positions are correct.</p>";
+  } else {
+    feedback.innerHTML =
+      "<p class='fail'>" + correct + "/" + total +
+      " positions are correct. Continue adjusting the workflow.</p>";
+  }
+
+});
+
+// event handler, to reset the board 
+document
+.getElementById("reset-btn")
+.addEventListener("click", () => {
+
+  document
+    .getElementById("feedback")
+    .innerHTML = "";
+
+  setupBoard();
+
+});
+
+</script>
+
+<!-- CSS part of code, controls layout and style -->
+<style>
+
+/* Set up dimensions of cards and images */
+:root {
+  --card-width: 180px;
+  --card-height: 130px;
+}
+
+/* Set up workflow layout with grid */
+.workflow-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    var(--card-width) 40px var(--card-width) 40px var(--card-width);
+
+  gap: 16px;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+.dropzone {
+
+  width: var(--card-width);
+  height: var(--card-height);
+
+  border: 3px dashed #bdbdbd;
+  border-radius: 12px;
+
+  background: #fafafa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Create arrows */
+.arrow {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-down-arrow {
+  transform: translateX(135px);
+}
+
+/* Set up layout of card bank */
+.bank {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, var(--card-width));
+
+  gap: 12px;
+
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+/* Set up each card */
+.card {
+
+  width: var(--card-width);
+  height: var(--card-height);
+
+  border: none;
+  border-radius: 0;
+
+  background: transparent;
+
+  overflow: hidden;
+
+  cursor: grab;
+}
+
+/* Control how image will look within card */
+.card img {
+
+  width: 95%;
+  height: 95%;
+
+  object-fit: contain;
+  
+  display: block;
+  margin: auto;
+}
+
+/* Style for correct boxes after checking */
+.correct {
+
+  border: 4px solid #26734d;
+  background: #eef8f1;
+}
+
+/* Style for incorrect boxes after checking */
+.incorrect {
+
+  border: 4px solid #b22222;
+  background: #fff0f0;
+}
+
+/* Style if all cards are in correct order */
+.pass {
+
+  color: #26734d;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Style if some cards in incorrect order */
+.fail {
+
+  color: #b22222;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Style for buttons to check answers and reset board */
+button {
+
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+#feedback {
+
+  margin-top: 20px;
+}
+
+</style>
+
 <hr>
+</section>
 </section>
 </section>
 <section id="troubleshooting-git-and-github" class="level1 page-columns page-full">
@@ -2814,7 +3228,7 @@ Wang, Shaopu, Shuqin Zeng, Muireann Egan, Paul Cherry, Conall Strain, Emilene Mo
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       Etc/UTC
- date     2026-07-09
+ date     2026-08-07
  pandoc   3.1.1 @ /usr/local/bin/ (via rmarkdown)
 
 ─ Packages ───────────────────────────────────────────────────────────────────
